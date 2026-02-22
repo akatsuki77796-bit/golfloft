@@ -9,16 +9,14 @@
   <body>
     <header class="site-header">
       <h1>ロフト角クラブ検索</h1>
-      <p class="lead">ロフト角を中心にクラブを検索できます。メーカーやカテゴリでの絞り込みも可能です。</p>
-      <p><a class="inline-link" href="./list.html">登録クラブ一覧を見る</a></p>
+      <p class="lead">ロフト角を中心にクラブを検索できます。メーカーやクラブ種別での絞り込みも可能です。</p>
     </header>
 
     <main class="container">
       <section class="controls" aria-label="検索条件">
         <div class="field field-main">
-          <label for="loftInput">ロフト角（必須）</label>
-          <input id="loftInput" list="loftOptions" type="search" placeholder="例: 28" inputmode="numeric" autocomplete="off" />
-          <datalist id="loftOptions"></datalist>
+          <label for="loftSelect">ロフト角（必須）</label>
+          <select id="loftSelect"></select>
         </div>
 
         <div class="field">
@@ -27,7 +25,7 @@
         </div>
 
         <div class="field">
-          <label for="categoryFilter">カテゴリ（任意）</label>
+          <label for="categoryFilter">クラブ種別（任意）</label>
           <select id="categoryFilter"></select>
         </div>
 
@@ -44,16 +42,20 @@
           <h2 id="resultHeading">検索結果</h2>
           <p id="listCount" class="muted"></p>
         </div>
-        <p id="guideMessage" class="guide">ロフト角を入力して検索してください。</p>
+        <p id="guideMessage" class="guide">ロフト角を選択して検索してください。</p>
         <div id="clubList" class="club-grid" role="list" hidden></div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <a class="subtle-link" href="./list.html">登録クラブ一覧</a>
+    </footer>
 
     <template id="clubCardTemplate">
       <article class="card" role="listitem">
         <h3 class="model"></h3>
         <p><strong>メーカー:</strong> <span class="maker"></span></p>
-        <p><strong>カテゴリ:</strong> <span class="category"></span></p>
+        <p><strong>クラブ種別:</strong> <span class="category"></span></p>
         <p><strong>ロフト角:</strong> <span class="loft"></span></p>
         <p class="other-lofts" hidden><strong>他のロフト角:</strong> <span class="other-lofts-values"></span></p>
       </article>

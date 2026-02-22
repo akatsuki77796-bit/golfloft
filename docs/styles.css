@@ -30,7 +30,8 @@ body {
 }
 
 .site-header,
-.container {
+.container,
+.site-footer {
   width: min(720px, 100% - 1.25rem);
   margin: 0 auto;
 }
@@ -62,7 +63,22 @@ h2 {
 }
 
 .container {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.site-footer {
+  padding: 1.2rem 0 1.6rem;
+}
+
+.subtle-link {
+  color: var(--muted);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.subtle-link:hover,
+.subtle-link:focus-visible {
+  text-decoration: underline;
 }
 
 .controls {
@@ -179,7 +195,8 @@ button {
 
 @media (min-width: 768px) {
   .site-header,
-  .container {
+  .container,
+  .site-footer {
     width: min(920px, 92vw);
   }
 
