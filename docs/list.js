@@ -1,3 +1,10 @@
+const CATEGORY_LABELS = {
+  utility: "ユーティリティ",
+  hybrid: "ユーティリティ",
+  wood: "ウッド",
+  iron: "アイアン",
+};
+
 const refs = {
   clubList: document.getElementById("clubList"),
   listCount: document.getElementById("listCount"),
@@ -12,6 +19,10 @@ function showError(message) {
 
 function formatLoft(loft) {
   return Number.isInteger(loft) ? String(loft) : String(loft);
+}
+
+function toCategoryLabel(category) {
+  return CATEGORY_LABELS[category] || category;
 }
 
 function groupClubsByModel(clubs) {
@@ -44,7 +55,7 @@ function render(clubs) {
     const card = refs.clubCardTemplate.content.firstElementChild.cloneNode(true);
     card.querySelector(".model").textContent = club.model;
     card.querySelector(".maker").textContent = club.maker;
-    card.querySelector(".category").textContent = club.category;
+    card.querySelector(".category").textContent = toCategoryLabel(club.category);
     card.querySelector(".lofts").textContent = club.lofts.map((loft) => `${formatLoft(loft)}°`).join(" / ");
     fragment.append(card);
   });

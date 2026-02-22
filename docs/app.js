@@ -1,13 +1,19 @@
+const CATEGORY_LABELS = {
+  utility: "ユーティリティ",
+  hybrid: "ユーティリティ",
+  wood: "ウッド",
+  iron: "アイアン",
+};
+
 const state = {
   clubs: [],
   makers: [],
-  categories: [],
+  categoryLabels: [],
   loftOptions: [],
 };
 
 const refs = {
-  loftInput: document.getElementById("loftInput"),
-  loftOptions: document.getElementById("loftOptions"),
+  loftSelect: document.getElementById("loftSelect"),
   makerFilter: document.getElementById("makerFilter"),
   categoryFilter: document.getElementById("categoryFilter"),
   searchBtn: document.getElementById("searchBtn"),
@@ -18,23 +24,12 @@ const refs = {
   clubCardTemplate: document.getElementById("clubCardTemplate"),
 };
 
+function toCategoryLabel(category) {
+  return CATEGORY_LABELS[category] || category;
+}
+
 function parseLoftInput(rawValue) {
-  const normalized = String(rawValue || "")
-    .normalize("NFKC")
-    .replace(/度|°/g, "")
-    .replace(/\s+/g, "")
-    .trim();
-
-  if (!normalized) {
-    return null;
-  }
-
-  const match = normalized.match(/[+-]?\d+(?:\.\d+)?/);
-  if (!match) {
-    return null;
-  }
-
-  const value = Number(match[0]);
+  const value = Number(rawValue);
   return Number.isFinite(value) ? value : null;
 }
 
@@ -68,12 +63,19 @@ function initSelect(selectEl, options, allLabel) {
   });
 }
 
-function initLoftOptions(lofts) {
-  refs.loftOptions.innerHTML = "";
+function initLoftSelect(lofts) {
+  refs.loftSelect.innerHTML = "";
+
+  const placeholderOption = document.createElement("option");
+  placeholderOption.value = "";
+  placeholderOption.textContent = "ロフト角を選択してください";
+  refs.loftSelect.append(placeholderOption);
+
   lofts.forEach((loft) => {
     const option = document.createElement("option");
     option.value = formatLoft(loft);
-    refs.loftOptions.append(option);
+    option.textContent = `${formatLoft(loft)}°`;
+    refs.loftSelect.append(option);
   });
 }
 
@@ -82,8 +84,7 @@ function getOtherLoftsForModel(club, searchedLoft) {
     .filter((item) => item.model === club.model && Number(item.loft_deg) !== searchedLoft)
     .map((item) => Number(item.loft_deg));
 
-  const uniqueSorted = [...new Set(otherLofts)].sort((a, b) => a - b);
-  return uniqueSorted;
+  return [...new Set(otherLofts)].sort((a, b) => a - b);
 }
 
 function renderClubs(clubs, searchedLoft) {
@@ -94,7 +95,7 @@ function renderClubs(clubs, searchedLoft) {
     const card = refs.clubCardTemplate.content.firstElementChild.cloneNode(true);
     card.querySelector(".model").textContent = club.model;
     card.querySelector(".maker").textContent = club.maker;
-    card.querySelector(".category").textContent = club.category;
+    card.querySelector(".category").textContent = toCategoryLabel(club.category);
 
     const loftEl = card.querySelector(".loft");
     loftEl.textContent = `${formatLoft(club.loft_deg)}°`;
@@ -128,19 +129,19 @@ function showGuide(text) {
 function handleSearch() {
   clearError();
 
-  const loft = parseLoftInput(refs.loftInput.value);
+  const loft = parseLoftInput(refs.loftSelect.value);
   if (loft === null) {
-    showGuide("検索条件が空です。ロフト角を入力してください。");
+    showGuide("検索条件が空です。ロフト角を選択してください。");
     return;
   }
 
   const maker = refs.makerFilter.value;
-  const category = refs.categoryFilter.value;
+  const categoryLabel = refs.categoryFilter.value;
 
   const matches = state.clubs.filter((club) => {
     const loftMatches = Number(club.loft_deg) === loft;
     const makerMatches = maker === "all" || club.maker === maker;
-    const categoryMatches = category === "all" || club.category === category;
+    const categoryMatches = categoryLabel === "all" || toCategoryLabel(club.category) === categoryLabel;
     return loftMatches && makerMatches && categoryMatches;
   });
 
@@ -164,16 +165,18 @@ async function loadClubs() {
 
     const data = await response.json();
     state.makers = data.makers || [];
-    state.categories = data.categories || [];
     state.clubs = data.clubs || [];
     state.loftOptions = [...new Set(state.clubs.map((club) => Number(club.loft_deg)).filter(Number.isFinite))].sort(
       (a, b) => a - b,
     );
+    state.categoryLabels = [...new Set(state.clubs.map((club) => toCategoryLabel(club.category)))].sort((a, b) =>
+      a.localeCompare(b, "ja"),
+    );
 
     initSelect(refs.makerFilter, state.makers, "すべてのメーカー");
-    initSelect(refs.categoryFilter, state.categories, "すべてのカテゴリ");
-    initLoftOptions(state.loftOptions);
-    showGuide("ロフト角を入力して検索してください。");
+    initSelect(refs.categoryFilter, state.categoryLabels, "すべてのクラブ種別");
+    initLoftSelect(state.loftOptions);
+    showGuide("ロフト角を選択して検索してください。");
   } catch (error) {
     showError(`クラブデータの読み込みに失敗しました: ${error.message}`);
     showGuide("データを読み込めなかったため検索できません。");
