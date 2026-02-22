@@ -57,6 +57,31 @@ body {
   margin-bottom: 1rem;
 }
 
+.search-action-wrap {
+  align-self: end;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.error {
+  margin: 0 0 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #dc2626;
+  background: #fef2f2;
+  color: #991b1b;
+  font-size: 0.93rem;
+}
+
 .field,
 .card {
   background: var(--card);
@@ -169,7 +194,7 @@ h2 {
 
 @media (min-width: 720px) {
   .controls {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .section-header {

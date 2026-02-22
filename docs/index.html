@@ -15,8 +15,15 @@
     <main class="container">
       <section class="controls" aria-label="検索と絞り込み">
         <div class="field">
-          <label for="searchInput">検索（メーカー名・モデル名）</label>
-          <input id="searchInput" type="search" placeholder="例: PING / G430" />
+          <label for="makerInput">メーカー名</label>
+          <input id="makerInput" type="search" list="makerCandidates" placeholder="例: PING / ピン" autocomplete="off" />
+          <datalist id="makerCandidates"></datalist>
+        </div>
+
+        <div class="field">
+          <label for="modelInput">モデル名</label>
+          <input id="modelInput" type="search" list="modelCandidates" placeholder="例: G430" autocomplete="off" />
+          <datalist id="modelCandidates"></datalist>
         </div>
 
         <div class="field">
@@ -26,7 +33,14 @@
             <option value="hybrid">UT/ハイブリッド</option>
           </select>
         </div>
+
+        <div class="field search-action-wrap">
+          <label for="searchBtn" class="visually-hidden">検索実行</label>
+          <button id="searchBtn" type="button">検索</button>
+        </div>
       </section>
+
+      <p id="errorMessage" class="error" role="alert" hidden></p>
 
       <section aria-labelledby="clubListHeading">
         <div class="section-header">
