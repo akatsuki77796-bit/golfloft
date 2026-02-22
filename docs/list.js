@@ -10,6 +10,32 @@ function showError(message) {
   refs.errorMessage.textContent = message;
 }
 
+function formatLoft(loft) {
+  return Number.isInteger(loft) ? String(loft) : String(loft);
+}
+
+function groupClubsByModel(clubs) {
+  const grouped = new Map();
+
+  clubs.forEach((club) => {
+    const key = club.model;
+    if (!grouped.has(key)) {
+      grouped.set(key, {
+        model: club.model,
+        maker: club.maker,
+        category: club.category,
+        lofts: [],
+      });
+    }
+    grouped.get(key).lofts.push(Number(club.loft_deg));
+  });
+
+  return [...grouped.values()].map((item) => ({
+    ...item,
+    lofts: [...new Set(item.lofts)].filter(Number.isFinite).sort((a, b) => a - b),
+  }));
+}
+
 function render(clubs) {
   refs.clubList.innerHTML = "";
   const fragment = document.createDocumentFragment();
@@ -19,12 +45,12 @@ function render(clubs) {
     card.querySelector(".model").textContent = club.model;
     card.querySelector(".maker").textContent = club.maker;
     card.querySelector(".category").textContent = club.category;
-    card.querySelector(".loft").textContent = `${club.loft_deg}°`;
+    card.querySelector(".lofts").textContent = club.lofts.map((loft) => `${formatLoft(loft)}°`).join(" / ");
     fragment.append(card);
   });
 
   refs.clubList.append(fragment);
-  refs.listCount.textContent = `${clubs.length}件のクラブが登録されています。`;
+  refs.listCount.textContent = `${clubs.length}件の型番が登録されています。`;
 }
 
 async function load() {
@@ -34,7 +60,8 @@ async function load() {
       throw new Error(`HTTP ${response.status}`);
     }
     const data = await response.json();
-    render(data.clubs || []);
+    const groupedClubs = groupClubsByModel(data.clubs || []);
+    render(groupedClubs);
   } catch (error) {
     showError(`クラブデータの読み込みに失敗しました: ${error.message}`);
   }

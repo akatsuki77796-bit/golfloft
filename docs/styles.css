@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.5;
+  line-height: 1.65;
   font-size: 16px;
   --bg: #f5f7fb;
   --surface: #fff;
@@ -10,10 +10,17 @@
   --primary: #1268d6;
   --border: #d8deea;
   --danger: #b00020;
+  --highlight: #fff2bf;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,17 +31,29 @@ body {
 
 .site-header,
 .container {
-  width: min(960px, 92vw);
+  width: min(720px, 100% - 1.25rem);
   margin: 0 auto;
 }
 
 .site-header {
-  padding: 1.5rem 0 0.5rem;
+  padding: 1rem 0 0.5rem;
+}
+
+h1 {
+  font-size: 1.45rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 .lead {
   color: var(--muted);
-  margin-top: 0.25rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.98rem;
 }
 
 .inline-link {
@@ -48,32 +67,33 @@ body {
 
 .controls {
   display: grid;
-  gap: 0.9rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1rem;
+  padding: 0.85rem;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.35rem;
 }
 
-.field-main {
-  grid-column: 1 / -1;
+label {
+  font-size: 0.92rem;
 }
 
 input,
 select,
 button {
+  width: 100%;
   font: inherit;
-  min-height: 44px;
+  min-height: 46px;
   border-radius: 10px;
   border: 1px solid var(--border);
-  padding: 0.6rem 0.75rem;
+  padding: 0.65rem 0.75rem;
 }
 
 button {
@@ -83,15 +103,15 @@ button {
   font-weight: 700;
 }
 
-.search-action-wrap {
-  justify-content: end;
-}
-
 .section-header {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-top: 1.5rem;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 1.25rem;
+}
+
+.section-header h2 {
+  margin: 0;
 }
 
 .guide,
@@ -110,21 +130,40 @@ button {
 
 .club-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.9rem;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
 }
 
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 0.8rem;
+  padding: 0.85rem;
 }
 
 .card h2,
 .card h3 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.55rem;
   font-size: 1.05rem;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.card p {
+  margin: 0.35rem 0;
+  overflow-wrap: anywhere;
+}
+
+.highlight-loft {
+  background: var(--highlight);
+  border-radius: 6px;
+  padding: 0.05rem 0.35rem;
+  font-weight: 700;
+}
+
+.other-lofts {
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .visually-hidden {
@@ -136,4 +175,34 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0);
   border: 0;
+}
+
+@media (min-width: 768px) {
+  .site-header,
+  .container {
+    width: min(920px, 92vw);
+  }
+
+  .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .field-main,
+  .search-action-wrap {
+    grid-column: 1 / -1;
+  }
+
+  .search-action-wrap {
+    align-items: flex-end;
+  }
+
+  .section-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .club-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 }
