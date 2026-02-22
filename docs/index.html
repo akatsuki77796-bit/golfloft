@@ -13,7 +13,7 @@
     </header>
 
     <main class="container">
-      <section class="controls" aria-label="検索と絞り込み">
+      <form id="searchForm" class="controls" aria-label="検索と絞り込み">
         <div class="field">
           <label for="makerInput">メーカー（候補から選択可）</label>
           <input id="makerInput" type="search" list="makerOptions" placeholder="例: PING / ピン / ぴん" />
@@ -37,11 +37,11 @@
         <div class="field action-field">
           <label>検索操作</label>
           <div class="action-buttons">
-            <button id="searchBtn">検索</button>
+            <button id="searchBtn" type="submit">検索</button>
             <button id="resetBtn" class="secondary" type="button">クリア（全件表示）</button>
           </div>
         </div>
-      </section>
+      </form>
 
       <section aria-labelledby="clubListHeading">
         <div class="section-header">

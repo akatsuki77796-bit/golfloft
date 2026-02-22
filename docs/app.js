@@ -9,6 +9,7 @@ const refs = {
   modelInput: document.getElementById("modelInput"),
   makerOptions: document.getElementById("makerOptions"),
   modelOptions: document.getElementById("modelOptions"),
+  searchForm: document.getElementById("searchForm"),
   searchBtn: document.getElementById("searchBtn"),
   resetBtn: document.getElementById("resetBtn"),
   categoryFilter: document.getElementById("categoryFilter"),
@@ -221,7 +222,10 @@ function removeFromCompare(id) {
 }
 
 function initEvents() {
-  refs.searchBtn.addEventListener("click", applyFilters);
+  refs.searchForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    applyFilters();
+  });
   refs.resetBtn.addEventListener("click", resetFilters);
   refs.makerInput.addEventListener("input", buildModelOptions);
   refs.clearCompareBtn.addEventListener("click", () => {
