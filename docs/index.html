@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>UT/ハイブリッド ロフト角比較</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>UT/ハイブリッド ロフト角比較</h1>
+      <p class="lead">候補からメーカー・モデルを選び、「検索」で結果を表示します（最大5件比較）。</p>
+    </header>
+
+    <main class="container">
+      <section class="controls" aria-label="検索と絞り込み">
+        <div class="field">
+          <label for="makerInput">メーカー（候補から選択可）</label>
+          <input id="makerInput" type="search" list="makerOptions" placeholder="例: PING / ピン / ぴん" />
+          <datalist id="makerOptions"></datalist>
+        </div>
+
+        <div class="field">
+          <label for="modelInput">モデル（候補から選択可）</label>
+          <input id="modelInput" type="search" list="modelOptions" placeholder="例: G430 Hybrid" />
+          <datalist id="modelOptions"></datalist>
+        </div>
+
+        <div class="field">
+          <label for="categoryFilter">カテゴリ</label>
+          <select id="categoryFilter">
+            <option value="all">すべて</option>
+            <option value="hybrid">UT/ハイブリッド</option>
+          </select>
+        </div>
+
+        <div class="field action-field">
+          <label>検索操作</label>
+          <div class="action-buttons">
+            <button id="searchBtn">検索</button>
+            <button id="resetBtn" class="secondary" type="button">クリア（全件表示）</button>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="clubListHeading">
+        <div class="section-header">
+          <h2 id="clubListHeading">クラブ一覧</h2>
+          <p id="listCount" class="muted"></p>
+        </div>
+        <div id="clubList" class="club-grid" role="list"></div>
+      </section>
+
+      <section aria-labelledby="compareHeading">
+        <div class="section-header">
+          <h2 id="compareHeading">比較中のクラブ</h2>
+          <button id="clearCompareBtn" class="secondary">比較をすべて解除</button>
+        </div>
+        <div id="compareList" class="compare-grid" role="list"></div>
+      </section>
+
+      <section class="notice" aria-label="注意">
+        <p>※ ロフト角は年式・地域・仕様で差が出る場合があります。必ずメーカー公式スペックをご確認ください。</p>
+      </section>
+    </main>
+
+    <template id="clubCardTemplate">
+      <article class="card" role="listitem">
+        <h3 class="model"></h3>
+        <p><strong>メーカー:</strong> <span class="maker"></span></p>
+        <p><strong>カテゴリ:</strong> <span class="category"></span></p>
+        <p><strong>ロフト角:</strong> <span class="loft"></span></p>
+        <p><strong>年式:</strong> <span class="year"></span></p>
+        <p><strong>参照:</strong> <a class="source" target="_blank" rel="noopener noreferrer">source</a></p>
+        <p class="notes-wrap"><strong>備考:</strong> <span class="notes"></span></p>
+        <button class="add-btn">比較に追加</button>
+      </article>
+    </template>
+
+    <template id="compareCardTemplate">
+      <article class="card compare-card" role="listitem">
+        <h3 class="model"></h3>
+        <p><strong>メーカー:</strong> <span class="maker"></span></p>
+        <p><strong>カテゴリ:</strong> <span class="category"></span></p>
+        <p><strong>ロフト角:</strong> <span class="loft"></span></p>
+        <p><strong>年式:</strong> <span class="year"></span></p>
+        <button class="remove-btn secondary">削除</button>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
