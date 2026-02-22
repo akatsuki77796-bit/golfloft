@@ -17,7 +17,8 @@
       <section class="controls" aria-label="検索条件">
         <div class="field field-main">
           <label for="loftInput">ロフト角（必須）</label>
-          <input id="loftInput" type="search" placeholder="例: 28 / 28.0 / 28° / 28度" inputmode="decimal" autocomplete="off" />
+          <input id="loftInput" list="loftOptions" type="search" placeholder="例: 28" inputmode="numeric" autocomplete="off" />
+          <datalist id="loftOptions"></datalist>
         </div>
 
         <div class="field">
@@ -54,6 +55,7 @@
         <p><strong>メーカー:</strong> <span class="maker"></span></p>
         <p><strong>カテゴリ:</strong> <span class="category"></span></p>
         <p><strong>ロフト角:</strong> <span class="loft"></span></p>
+        <p class="other-lofts" hidden><strong>他のロフト角:</strong> <span class="other-lofts-values"></span></p>
       </article>
     </template>
 

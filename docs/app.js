@@ -2,10 +2,12 @@ const state = {
   clubs: [],
   makers: [],
   categories: [],
+  loftOptions: [],
 };
 
 const refs = {
   loftInput: document.getElementById("loftInput"),
+  loftOptions: document.getElementById("loftOptions"),
   makerFilter: document.getElementById("makerFilter"),
   categoryFilter: document.getElementById("categoryFilter"),
   searchBtn: document.getElementById("searchBtn"),
@@ -36,6 +38,10 @@ function parseLoftInput(rawValue) {
   return Number.isFinite(value) ? value : null;
 }
 
+function formatLoft(loft) {
+  return Number.isInteger(loft) ? String(loft) : String(loft);
+}
+
 function showError(message) {
   refs.errorMessage.hidden = false;
   refs.errorMessage.textContent = message;
@@ -62,7 +68,25 @@ function initSelect(selectEl, options, allLabel) {
   });
 }
 
-function renderClubs(clubs) {
+function initLoftOptions(lofts) {
+  refs.loftOptions.innerHTML = "";
+  lofts.forEach((loft) => {
+    const option = document.createElement("option");
+    option.value = formatLoft(loft);
+    refs.loftOptions.append(option);
+  });
+}
+
+function getOtherLoftsForModel(club, searchedLoft) {
+  const otherLofts = state.clubs
+    .filter((item) => item.model === club.model && Number(item.loft_deg) !== searchedLoft)
+    .map((item) => Number(item.loft_deg));
+
+  const uniqueSorted = [...new Set(otherLofts)].sort((a, b) => a - b);
+  return uniqueSorted;
+}
+
+function renderClubs(clubs, searchedLoft) {
   refs.clubList.innerHTML = "";
 
   const fragment = document.createDocumentFragment();
@@ -71,7 +95,21 @@ function renderClubs(clubs) {
     card.querySelector(".model").textContent = club.model;
     card.querySelector(".maker").textContent = club.maker;
     card.querySelector(".category").textContent = club.category;
-    card.querySelector(".loft").textContent = `${club.loft_deg}°`;
+
+    const loftEl = card.querySelector(".loft");
+    loftEl.textContent = `${formatLoft(club.loft_deg)}°`;
+    if (Number(club.loft_deg) === searchedLoft) {
+      loftEl.classList.add("highlight-loft");
+    }
+
+    const otherLofts = getOtherLoftsForModel(club, searchedLoft);
+    if (otherLofts.length > 0) {
+      const otherWrap = card.querySelector(".other-lofts");
+      const otherValues = card.querySelector(".other-lofts-values");
+      otherValues.textContent = otherLofts.map((loft) => `${formatLoft(loft)}°`).join(" / ");
+      otherWrap.hidden = false;
+    }
+
     fragment.append(card);
   });
 
@@ -109,11 +147,11 @@ function handleSearch() {
   refs.guideMessage.hidden = true;
 
   if (!matches.length) {
-    showGuide(`ロフト角 ${loft}° に一致するクラブは見つかりませんでした。`);
+    showGuide(`ロフト角 ${formatLoft(loft)}° に一致するクラブは見つかりませんでした。`);
     return;
   }
 
-  renderClubs(matches);
+  renderClubs(matches, loft);
   refs.listCount.textContent = `${matches.length}件`;
 }
 
@@ -128,9 +166,13 @@ async function loadClubs() {
     state.makers = data.makers || [];
     state.categories = data.categories || [];
     state.clubs = data.clubs || [];
+    state.loftOptions = [...new Set(state.clubs.map((club) => Number(club.loft_deg)).filter(Number.isFinite))].sort(
+      (a, b) => a - b,
+    );
 
     initSelect(refs.makerFilter, state.makers, "すべてのメーカー");
     initSelect(refs.categoryFilter, state.categories, "すべてのカテゴリ");
+    initLoftOptions(state.loftOptions);
     showGuide("ロフト角を入力して検索してください。");
   } catch (error) {
     showError(`クラブデータの読み込みに失敗しました: ${error.message}`);
