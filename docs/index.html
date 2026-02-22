@@ -3,35 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>UT/ハイブリッド ロフト角比較</title>
+    <title>ロフト角クラブ検索</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <h1>UT/ハイブリッド ロフト角比較</h1>
-      <p class="lead">メーカー名・モデル名で検索して、最大5件までロフト角を見比べられます。</p>
+      <h1>ロフト角クラブ検索</h1>
+      <p class="lead">ロフト角を中心にクラブを検索できます。メーカーやカテゴリでの絞り込みも可能です。</p>
+      <p><a class="inline-link" href="./list.html">登録クラブ一覧を見る</a></p>
     </header>
 
     <main class="container">
-      <section class="controls" aria-label="検索と絞り込み">
-        <div class="field">
-          <label for="makerInput">メーカー名</label>
-          <input id="makerInput" type="search" list="makerCandidates" placeholder="例: PING / ピン" autocomplete="off" />
-          <datalist id="makerCandidates"></datalist>
+      <section class="controls" aria-label="検索条件">
+        <div class="field field-main">
+          <label for="loftInput">ロフト角（必須）</label>
+          <input id="loftInput" type="search" placeholder="例: 28 / 28.0 / 28° / 28度" inputmode="decimal" autocomplete="off" />
         </div>
 
         <div class="field">
-          <label for="modelInput">モデル名</label>
-          <input id="modelInput" type="search" list="modelCandidates" placeholder="例: G430" autocomplete="off" />
-          <datalist id="modelCandidates"></datalist>
+          <label for="makerFilter">メーカー（任意）</label>
+          <select id="makerFilter"></select>
         </div>
 
         <div class="field">
-          <label for="categoryFilter">カテゴリ</label>
-          <select id="categoryFilter">
-            <option value="all">すべて</option>
-            <option value="hybrid">UT/ハイブリッド</option>
-          </select>
+          <label for="categoryFilter">カテゴリ（任意）</label>
+          <select id="categoryFilter"></select>
         </div>
 
         <div class="field search-action-wrap">
@@ -42,24 +38,13 @@
 
       <p id="errorMessage" class="error" role="alert" hidden></p>
 
-      <section aria-labelledby="clubListHeading">
+      <section aria-labelledby="resultHeading">
         <div class="section-header">
-          <h2 id="clubListHeading">クラブ一覧</h2>
+          <h2 id="resultHeading">検索結果</h2>
           <p id="listCount" class="muted"></p>
         </div>
-        <div id="clubList" class="club-grid" role="list"></div>
-      </section>
-
-      <section aria-labelledby="compareHeading">
-        <div class="section-header">
-          <h2 id="compareHeading">比較中のクラブ</h2>
-          <button id="clearCompareBtn" class="secondary">比較をすべて解除</button>
-        </div>
-        <div id="compareList" class="compare-grid" role="list"></div>
-      </section>
-
-      <section class="notice" aria-label="注意">
-        <p>※ ロフト角は年式・地域・仕様で差が出る場合があります。必ずメーカー公式スペックをご確認ください。</p>
+        <p id="guideMessage" class="guide">ロフト角を入力して検索してください。</p>
+        <div id="clubList" class="club-grid" role="list" hidden></div>
       </section>
     </main>
 
@@ -69,21 +54,6 @@
         <p><strong>メーカー:</strong> <span class="maker"></span></p>
         <p><strong>カテゴリ:</strong> <span class="category"></span></p>
         <p><strong>ロフト角:</strong> <span class="loft"></span></p>
-        <p><strong>年式:</strong> <span class="year"></span></p>
-        <p><strong>参照:</strong> <a class="source" target="_blank" rel="noopener noreferrer">source</a></p>
-        <p class="notes-wrap"><strong>備考:</strong> <span class="notes"></span></p>
-        <button class="add-btn">比較に追加</button>
-      </article>
-    </template>
-
-    <template id="compareCardTemplate">
-      <article class="card compare-card" role="listitem">
-        <h3 class="model"></h3>
-        <p><strong>メーカー:</strong> <span class="maker"></span></p>
-        <p><strong>カテゴリ:</strong> <span class="category"></span></p>
-        <p><strong>ロフト角:</strong> <span class="loft"></span></p>
-        <p><strong>年式:</strong> <span class="year"></span></p>
-        <button class="remove-btn secondary">削除</button>
       </article>
     </template>
 

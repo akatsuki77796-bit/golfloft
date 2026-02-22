@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>登録クラブ一覧</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>登録クラブ一覧</h1>
+      <p class="lead">登録済みクラブ情報（メーカー・型番・カテゴリ・ロフト角）を確認できます。</p>
+      <p><a class="inline-link" href="./index.html">トップに戻る</a></p>
+    </header>
+
+    <main class="container">
+      <p id="errorMessage" class="error" role="alert" hidden></p>
+      <p id="listCount" class="muted"></p>
+      <div id="clubList" class="club-grid" role="list"></div>
+    </main>
+
+    <template id="clubCardTemplate">
+      <article class="card" role="listitem">
+        <h2 class="model"></h2>
+        <p><strong>メーカー:</strong> <span class="maker"></span></p>
+        <p><strong>カテゴリ:</strong> <span class="category"></span></p>
+        <p><strong>ロフト角:</strong> <span class="loft"></span></p>
+      </article>
+    </template>
+
+    <script src="./list.js" defer></script>
+  </body>
+</html>
