@@ -1,0 +1,992 @@
+[
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2016)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2016,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2017)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2017,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2018)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2018,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2019)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2019,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2020)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2020,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2021)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2021,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2022)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2022,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2023)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2023,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2024)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2024,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2025)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2025,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Titleist",
+    "model": "Titleist UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://www.titleist.com/golf-clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "PING",
+    "model": "PING UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://ping.com/en-us/clubs/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "TaylorMade",
+    "model": "TaylorMade UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://www.taylormadegolf.com/golf-clubs/rescues/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Callaway",
+    "model": "Callaway UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://www.callawaygolf.com/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Cobra",
+    "model": "Cobra UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://www.cobragolf.com/collections/hybrids",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Mizuno",
+    "model": "Mizuno UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://mizunogolf.com/us/golf-clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Srixon",
+    "model": "Srixon UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://us.dunlopsports.com/srixon/clubs/hybrids/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Bridgestone",
+    "model": "Bridgestone UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://www.bs-golf.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "HONMA",
+    "model": "HONMA UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://www.honmagolf.com/us/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  },
+  {
+    "maker": "Yamaha",
+    "model": "Yamaha UT/Hybrid (2026)",
+    "category": "hybrid",
+    "loft_deg": null,
+    "year": 2026,
+    "source_url": "https://golf.yamaha.com/",
+    "notes": "未確認（公式または信頼できる参照先の年式別スペック確認待ち）"
+  }
+]
