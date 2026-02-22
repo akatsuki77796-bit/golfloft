@@ -1,26 +1,157 @@
 {
-  "categories": ["utility", "hybrid", "iron"],
-  "makers": ["Titleist", "PING", "TaylorMade", "Callaway", "Mizuno", "HONMA"],
+  "categories": [
+    "utility",
+    "hybrid",
+    "iron"
+  ],
+  "makers": [
+    "Titleist",
+    "PING",
+    "TaylorMade",
+    "Callaway",
+    "Mizuno",
+    "HONMA"
+  ],
   "clubs": [
-    { "maker": "Titleist", "model": "GT2 Hybrid", "category": "hybrid", "loft_deg": 18 },
-    { "maker": "Titleist", "model": "GT2 Hybrid", "category": "hybrid", "loft_deg": 21 },
-    { "maker": "Titleist", "model": "GT2 Hybrid", "category": "hybrid", "loft_deg": 24 },
-    { "maker": "PING", "model": "G430 Hybrid", "category": "hybrid", "loft_deg": 19 },
-    { "maker": "PING", "model": "G430 Hybrid", "category": "hybrid", "loft_deg": 22 },
-    { "maker": "PING", "model": "G430 Hybrid", "category": "hybrid", "loft_deg": 26 },
-    { "maker": "TaylorMade", "model": "Qi10 Rescue", "category": "hybrid", "loft_deg": 19 },
-    { "maker": "TaylorMade", "model": "Qi10 Rescue", "category": "hybrid", "loft_deg": 22 },
-    { "maker": "TaylorMade", "model": "Qi10 Max Rescue", "category": "hybrid", "loft_deg": 28 },
-    { "maker": "Callaway", "model": "Paradym Ai Smoke Hybrid", "category": "hybrid", "loft_deg": 18 },
-    { "maker": "Callaway", "model": "Paradym Ai Smoke Hybrid", "category": "hybrid", "loft_deg": 21 },
-    { "maker": "Callaway", "model": "Paradym Ai Smoke Hybrid", "category": "hybrid", "loft_deg": 24 },
-    { "maker": "Mizuno", "model": "ST-MAX 230 Hybrid", "category": "hybrid", "loft_deg": 19 },
-    { "maker": "Mizuno", "model": "ST-MAX 230 Hybrid", "category": "hybrid", "loft_deg": 22 },
-    { "maker": "Mizuno", "model": "ST-MAX 230 Hybrid", "category": "hybrid", "loft_deg": 25 },
-    { "maker": "HONMA", "model": "TW757 Utility", "category": "utility", "loft_deg": 21 },
-    { "maker": "HONMA", "model": "TW757 Utility", "category": "utility", "loft_deg": 24 },
-    { "maker": "HONMA", "model": "TW757 Utility", "category": "utility", "loft_deg": 28 },
-    { "maker": "Titleist", "model": "T200 Utility Build", "category": "iron", "loft_deg": 28 },
-    { "maker": "PING", "model": "iCrossover", "category": "iron", "loft_deg": 28 }
+    {
+      "maker": "Titleist",
+      "model": "GT2 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 18,
+      "release_date": "2024-08"
+    },
+    {
+      "maker": "Titleist",
+      "model": "GT2 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 21,
+      "release_date": "2024-08"
+    },
+    {
+      "maker": "Titleist",
+      "model": "GT2 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 24,
+      "release_date": "2024-08"
+    },
+    {
+      "maker": "PING",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 19,
+      "release_date": "2022-11"
+    },
+    {
+      "maker": "PING",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 22,
+      "release_date": "2022-11"
+    },
+    {
+      "maker": "PING",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 26,
+      "release_date": "2022-11"
+    },
+    {
+      "maker": "TaylorMade",
+      "model": "Qi10 Rescue",
+      "category": "hybrid",
+      "loft_deg": 19,
+      "release_date": "2024-02"
+    },
+    {
+      "maker": "TaylorMade",
+      "model": "Qi10 Rescue",
+      "category": "hybrid",
+      "loft_deg": 22,
+      "release_date": "2024-02"
+    },
+    {
+      "maker": "TaylorMade",
+      "model": "Qi10 Max Rescue",
+      "category": "hybrid",
+      "loft_deg": 28,
+      "release_date": "2024-02"
+    },
+    {
+      "maker": "Callaway",
+      "model": "Paradym Ai Smoke Hybrid",
+      "category": "hybrid",
+      "loft_deg": 18,
+      "release_date": "2024-01"
+    },
+    {
+      "maker": "Callaway",
+      "model": "Paradym Ai Smoke Hybrid",
+      "category": "hybrid",
+      "loft_deg": 21,
+      "release_date": "2024-01"
+    },
+    {
+      "maker": "Callaway",
+      "model": "Paradym Ai Smoke Hybrid",
+      "category": "hybrid",
+      "loft_deg": 24,
+      "release_date": "2024-01"
+    },
+    {
+      "maker": "Mizuno",
+      "model": "ST-MAX 230 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 19,
+      "release_date": "2024-03"
+    },
+    {
+      "maker": "Mizuno",
+      "model": "ST-MAX 230 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 22,
+      "release_date": "2024-03"
+    },
+    {
+      "maker": "Mizuno",
+      "model": "ST-MAX 230 Hybrid",
+      "category": "hybrid",
+      "loft_deg": 25,
+      "release_date": "2024-03"
+    },
+    {
+      "maker": "HONMA",
+      "model": "TW757 Utility",
+      "category": "utility",
+      "loft_deg": 21,
+      "release_date": "2022-01"
+    },
+    {
+      "maker": "HONMA",
+      "model": "TW757 Utility",
+      "category": "utility",
+      "loft_deg": 24,
+      "release_date": "2022-01"
+    },
+    {
+      "maker": "HONMA",
+      "model": "TW757 Utility",
+      "category": "utility",
+      "loft_deg": 28,
+      "release_date": "2022-01"
+    },
+    {
+      "maker": "Titleist",
+      "model": "T200 Utility Build",
+      "category": "iron",
+      "loft_deg": 28,
+      "release_date": "2021/09"
+    },
+    {
+      "maker": "PING",
+      "model": "iCrossover",
+      "category": "iron",
+      "loft_deg": 28,
+      "release_date": ""
+    }
   ]
 }
