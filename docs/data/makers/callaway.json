@@ -1,5 +1,164 @@
 {
   "maker_key": "callaway",
   "maker_name_ja": "キャロウェイ",
-  "models": []
+  "models": [
+    {
+      "model": "ROGUE STAR",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [],
+      "release_date": "",
+      "source_url": "",
+      "notes": "要確認（参照元URL未登録）"
+    },
+    {
+      "model": "ROGUE STAR Women's",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [],
+      "release_date": "",
+      "source_url": "",
+      "notes": "要確認（参照元URL未登録）"
+    },
+    {
+      "model": "EPIC STAR",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [],
+      "release_date": "",
+      "source_url": "",
+      "notes": "要確認（参照元URL未登録）"
+    },
+    {
+      "model": "XR OS",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [],
+      "release_date": "",
+      "source_url": "",
+      "notes": "要確認（参照元URL未登録）"
+    },
+    {
+      "model": "XR OS Women's",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [],
+      "release_date": "",
+      "source_url": "",
+      "notes": "要確認（参照元URL未登録）"
+    },
+    {
+      "model": "BIG BERTHA BETA",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        18,
+        20,
+        22,
+        25
+      ],
+      "release_date": "2016-05",
+      "source_url": "https://news.callawaygolf.jp/mens-clubs/utilities/2016_big_bertha_beta_ut.html"
+    },
+    {
+      "model": "BIG BERTHA BETA Women's",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        20,
+        22,
+        25
+      ],
+      "release_date": "2016-05",
+      "source_url": "https://news.callawaygolf.jp/womens-clubs/utilities/2016_big_bertha_beta_womens_ut.html"
+    },
+    {
+      "model": "filly (Women's)",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        22,
+        25,
+        28
+      ],
+      "release_date": "2015-09",
+      "source_url": "https://news.callawaygolf.jp/womens-clubs/utilities/2015_filly_ut.html"
+    },
+    {
+      "model": "CALLAWAY COLLECTION",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        19,
+        22,
+        25
+      ],
+      "release_date": "2015-07",
+      "source_url": "https://news.callawaygolf.jp/mens-clubs/utilities/2015_collection_ut.html"
+    },
+    {
+      "model": "XR",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        19,
+        22,
+        25,
+        28
+      ],
+      "release_date": "2015-02",
+      "source_url": "https://news.callawaygolf.jp/mens-clubs/utilities/2015_xr_ut.html"
+    },
+    {
+      "model": "BIG BERTHA ALPHA 815",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        18,
+        20,
+        23
+      ],
+      "release_date": "2015-01",
+      "source_url": "https://news.callawaygolf.jp/mens-clubs/utilities/2014_big_bertha_815_ut.html"
+    },
+    {
+      "model": "XR PRO",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        16,
+        18,
+        20,
+        23
+      ],
+      "release_date": "2015-03",
+      "source_url": "https://news.callawaygolf.jp/mens-clubs/utilities/2015_xr_pro_ut.html"
+    },
+    {
+      "model": "APEX",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        18,
+        20,
+        23,
+        26
+      ],
+      "release_date": "2015-12",
+      "source_url": "https://news.callawaygolf.jp/mens-clubs/utilities/2015_apex_ut.html"
+    },
+    {
+      "model": "XR Women's",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        19,
+        22,
+        25,
+        28
+      ],
+      "release_date": "2015-02",
+      "source_url": "https://news.callawaygolf.jp/womens-clubs/utilities/2015_xr_womens_ut.html"
+    }
+  ]
 }
