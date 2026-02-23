@@ -43,7 +43,11 @@ function renderModels(makerName, models) {
 
   const fragment = document.createDocumentFragment();
 
-  const sortedModels = [...models].sort((a, b) => {
+  const visibleModels = document.body.dataset.verifiedOnly === "true"
+    ? models.filter((model) => model.source_url && String(model.source_url).trim() !== "")
+    : models;
+
+  const sortedModels = [...visibleModels].sort((a, b) => {
     const releaseA = String(a?.release_date || "").trim();
     const releaseB = String(b?.release_date || "").trim();
 
@@ -103,7 +107,7 @@ function renderModels(makerName, models) {
   });
 
   refs.modelList.append(fragment);
-  refs.listCount.textContent = `${models.length}件の型番`;
+  refs.listCount.textContent = `${sortedModels.length}件の型番`;
 }
 
 async function loadMakerPage() {
