@@ -1,0 +1,14 @@
+{
+  "maker_key": "mizuno",
+  "maker_name_ja": "ミズノ",
+  "models": [
+    {
+      "model": "ST-MAX 230 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [19, 22, 25],
+      "release_date": "2024-03",
+      "source_url": ""
+    }
+  ]
+}

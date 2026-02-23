@@ -9,25 +9,23 @@
   <body>
     <header class="site-header">
       <h1>登録クラブ一覧</h1>
-      <p class="lead">登録済みクラブ情報（メーカー・型番・クラブ種別・ロフト角）を確認できます。</p>
+      <p class="lead">メーカー別ページへのハブです。メーカー名から登録モデル一覧を確認できます。</p>
     </header>
 
     <main class="container">
       <p id="errorMessage" class="error" role="alert" hidden></p>
       <p id="listCount" class="muted"></p>
-      <div id="clubList" class="club-grid" role="list"></div>
+      <div id="makerList" class="club-grid" role="list"></div>
     </main>
 
     <footer class="site-footer">
       <a class="subtle-link" href="./index.html">トップへ戻る</a>
     </footer>
 
-    <template id="clubCardTemplate">
+    <template id="makerCardTemplate">
       <article class="card" role="listitem">
-        <h2 class="model"></h2>
-        <p><strong>メーカー:</strong> <span class="maker"></span></p>
-        <p><strong>クラブ種別:</strong> <span class="category"></span></p>
-        <p><strong>ロフト角一覧:</strong> <span class="lofts"></span></p>
+        <h2 class="maker-name"></h2>
+        <p><a class="inline-link maker-link" href="#">メーカー別一覧を見る</a></p>
       </article>
     </template>
 

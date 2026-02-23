@@ -1,0 +1,46 @@
+{
+  "makers": [
+    {
+      "key": "callaway",
+      "name_ja": "キャロウェイ",
+      "kana": "きゃろうぇい",
+      "data_file": "./makers/callaway.json",
+      "page_url": "./makers/callaway.html"
+    },
+    {
+      "key": "taylormade",
+      "name_ja": "テーラーメイド",
+      "kana": "てーらーめいど",
+      "data_file": "./makers/taylormade.json",
+      "page_url": "./makers/taylormade.html"
+    },
+    {
+      "key": "titleist",
+      "name_ja": "タイトリスト",
+      "kana": "たいとりすと",
+      "data_file": "./makers/titleist.json",
+      "page_url": "./makers/titleist.html"
+    },
+    {
+      "key": "ping",
+      "name_ja": "ピン",
+      "kana": "ぴん",
+      "data_file": "./makers/ping.json",
+      "page_url": "./makers/ping.html"
+    },
+    {
+      "key": "honma",
+      "name_ja": "本間ゴルフ",
+      "kana": "ほんまごるふ",
+      "data_file": "./makers/honma.json",
+      "page_url": "./makers/honma.html"
+    },
+    {
+      "key": "mizuno",
+      "name_ja": "ミズノ",
+      "kana": "みずの",
+      "data_file": "./makers/mizuno.json",
+      "page_url": "./makers/mizuno.html"
+    }
+  ]
+}

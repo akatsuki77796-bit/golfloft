@@ -1,40 +1,37 @@
-# UT/Hybrid データ追加手順（`clubs.json`）
+# データ構成（メーカー別運用）
 
-このファイルは、`/docs/data/clubs.json` を後から手入力で埋めるための手順書です。
+`/docs` 公開ルートのデータは次の3層で管理します。
 
-## 1. 1件のデータ形式
+## 1. メーカーマスタ
+- `makers.json`
+  - `key`: メーカー識別子（ページ名・ファイル名で使用）
+  - `name_ja`: 日本語表示名
+  - `kana`: 50音順ソート用
+  - `data_file`: メーカー別データJSONへのパス
+  - `page_url`: メーカー別ページURL
+
+## 2. メーカー別データ
+- `makers/{maker_key}.json`
+  - `models` 配列で型番単位に管理
+  - 同型番は1レコードに集約し、`lofts` は昇順配列で保持
+  - `source_url` は空欄可だが、項目自体は必須
+
+モデルレコード例:
 
 ```json
 {
-  "maker": "Titleist",
   "model": "GT2 Hybrid",
-  "category": "hybrid",
-  "loft_deg": 21,
-  "year": 2025,
-  "source_url": "https://www.titleist.com/golf-clubs/hybrids/gt2-hybrid",
-  "notes": "公式スペックページで確認"
+  "type": "hybrid",
+  "type_ja": "ユーティリティ",
+  "lofts": [18, 21, 24],
+  "release_date": "2024-08",
+  "source_url": ""
 }
 ```
 
-- `maker`: メーカー名（例: Titleist, PING, TaylorMade）
-- `model`: モデル名
-- `category`: 今回は `"hybrid"` 固定
-- `loft_deg`: 数値（不明なら `null`）
-- `year`: 年式（2016〜2026）
-- `source_url`: 必須（公式または信頼できる参照URL）
-- `notes`: 補足。不明の場合は「未確認」と明記
+## 3. 全体検索用インデックス
+- `search_index.json`
+  - 検索に必要な最小項目のみ保持
+  - `maker_key`, `maker_name_ja`, `type_ja`, `model`, `lofts`, `release_date`, `source_url`
 
-## 2. コピペで追加する手順
-
-1. `clubs.json` から対象メーカー・年式の行を探す
-2. `model` を実モデル名に更新
-3. `source_url` を公式スペックURLへ更新
-4. `loft_deg` を実測/公式値に更新（不明時は `null` のまま）
-5. `notes` を「公式で確認済み」などに更新
-
-## 3. ルール
-
-- 捏造禁止（推測で `loft_deg` を入れない）
-- `source_url` は必須
-- 値が取れない場合は `loft_deg: null` とし、`notes` に「未確認」を残す
-- 文字コードは UTF-8 のまま保存
+`index.html` はこの索引のみ読み込み、重い全件読込を避けます。
