@@ -1,14 +1,5 @@
 {
   "maker_key": "callaway",
   "maker_name_ja": "キャロウェイ",
-  "models": [
-    {
-      "model": "Paradym Ai Smoke Hybrid",
-      "type": "hybrid",
-      "type_ja": "ユーティリティ",
-      "lofts": [18, 21, 24],
-      "release_date": "2024-01",
-      "source_url": ""
-    }
-  ]
+  "models": []
 }

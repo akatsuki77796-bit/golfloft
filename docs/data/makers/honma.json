@@ -3,10 +3,14 @@
   "maker_name_ja": "本間ゴルフ",
   "models": [
     {
-      "model": "TW757 Utility",
+      "model": "TW757",
       "type": "utility",
       "type_ja": "ユーティリティ",
-      "lofts": [21, 24, 28],
+      "lofts": [
+        21,
+        24,
+        28
+      ],
       "release_date": "2022-01",
       "source_url": ""
     }
