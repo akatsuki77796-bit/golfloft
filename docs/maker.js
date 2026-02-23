@@ -47,12 +47,17 @@ function renderModels(makerName, models) {
     const card = refs.modelCardTemplate.content.firstElementChild.cloneNode(true);
     card.querySelector(".model").textContent = normalizeModelName(model.model);
     card.querySelector(".category").textContent = normalizeTypeJa(model);
-    card.querySelector(".lofts").textContent = (model.lofts || [])
-      .map(Number)
-      .filter(Number.isFinite)
-      .sort((a, b) => a - b)
-      .map((loft) => `${formatLoft(loft)}°`)
-      .join(" / ");
+    const loftValues = (model.lofts || []).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+    const loftText = loftValues.map((loft) => `${formatLoft(loft)}°`).join(" / ");
+    const needsReview = !loftValues.length || (model.notes && String(model.notes).includes("要確認"));
+    card.querySelector(".lofts").textContent = loftText || "要確認";
+
+    if (needsReview) {
+      const review = document.createElement("p");
+      review.className = "muted";
+      review.textContent = model.notes && String(model.notes).trim() !== "" ? model.notes : "要確認";
+      card.append(review);
+    }
 
     const releaseWrap = card.querySelector(".release-date-row");
     if (model.release_date && String(model.release_date).trim() !== "") {
