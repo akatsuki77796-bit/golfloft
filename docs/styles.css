@@ -70,6 +70,21 @@ h2 {
   padding: 1.2rem 0 1.6rem;
 }
 
+.registered-club-label {
+  color: var(--text);
+  font-size: 0.88rem;
+  text-decoration: none;
+  cursor: default;
+}
+
+.registered-club-label:hover,
+.registered-club-label:focus,
+.registered-club-label:focus-visible,
+.registered-club-label:active {
+  color: var(--text);
+  text-decoration: none;
+}
+
 .subtle-link {
   color: var(--muted);
   font-size: 0.88rem;
