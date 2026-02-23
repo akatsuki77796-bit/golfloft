@@ -29,7 +29,10 @@ function normalizeModelName(modelName) {
     return "";
   }
 
-  return String(modelName).replace(/Hybrid/g, "ハイブリッド");
+  return String(modelName)
+    .replace(/\s*(?:Hybrid|ハイブリッド|ユーティリティ|Utility)\s*/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function renderModels(makerName, models) {

@@ -3,18 +3,24 @@
   "maker_name_ja": "タイトリスト",
   "models": [
     {
-      "model": "GT2 Hybrid",
+      "model": "GT2",
       "type": "hybrid",
       "type_ja": "ユーティリティ",
-      "lofts": [18, 21, 24],
+      "lofts": [
+        18,
+        21,
+        24
+      ],
       "release_date": "2024-08",
       "source_url": ""
     },
     {
-      "model": "T200 Utility Build",
+      "model": "T200 Build",
       "type": "iron",
       "type_ja": "アイアン",
-      "lofts": [28],
+      "lofts": [
+        28
+      ],
       "release_date": "2021/09",
       "source_url": ""
     }
