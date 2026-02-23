@@ -41,11 +41,14 @@ function renderModels(makerName, models) {
     }
 
     const sourceLink = card.querySelector(".source-link");
-    sourceLink.href = model.source_url || "#";
-    if (!model.source_url) {
-      sourceLink.textContent = "参照元URL未登録";
-      sourceLink.removeAttribute("target");
-      sourceLink.removeAttribute("rel");
+    if (model.source_url) {
+      sourceLink.href = model.source_url;
+      sourceLink.textContent = "参照ページ";
+    } else {
+      const sourceText = document.createElement("span");
+      sourceText.className = "source-text";
+      sourceText.textContent = "参照元URL未登録";
+      sourceLink.replaceWith(sourceText);
     }
 
     fragment.append(card);
@@ -57,6 +60,9 @@ function renderModels(makerName, models) {
 
 async function loadMakerPage() {
   const makerKey = document.body.dataset.makerKey;
+
+  refs.pageLead.textContent = "データを読み込み中です...";
+  refs.listCount.textContent = "読み込み中...";
 
   try {
     const [makersResponse, makerDataResponse] = await Promise.all([
