@@ -27,6 +27,44 @@ function parseLoftInput(rawValue) {
   return Number.isFinite(value) ? value : null;
 }
 
+function normalizeTypeJa(record) {
+  if (record?.type_ja && String(record.type_ja).trim() !== "") {
+    return record.type_ja;
+  }
+
+  return record?.type === "hybrid" ? "ユーティリティ" : "";
+}
+
+function normalizeModelName(modelName) {
+  if (!modelName) {
+    return "";
+  }
+
+  return String(modelName).replace(/Hybrid/g, "ハイブリッド");
+}
+
+function parseReleaseDateValue(rawDate) {
+  if (!rawDate || String(rawDate).trim() === "") {
+    return Number.NEGATIVE_INFINITY;
+  }
+
+  const normalized = String(rawDate).trim().replace(/\//g, "-");
+  const match = normalized.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?$/);
+  if (!match) {
+    return Number.NEGATIVE_INFINITY;
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = match[3] ? Number(match[3]) : 1;
+
+  if (!Number.isInteger(year) || !Number.isInteger(month) || !Number.isInteger(day)) {
+    return Number.NEGATIVE_INFINITY;
+  }
+
+  return Date.UTC(year, month - 1, day);
+}
+
 function showError(message) {
   if (refs.errorMessage) {
     refs.errorMessage.hidden = false;
@@ -112,9 +150,9 @@ function renderResults(matches, searchedLoft) {
 
   matches.forEach((record) => {
     const card = refs.clubCardTemplate.content.firstElementChild.cloneNode(true);
-    card.querySelector(".model").textContent = record.model;
+    card.querySelector(".model").textContent = normalizeModelName(record.model);
     card.querySelector(".maker").textContent = record.maker_name_ja;
-    card.querySelector(".category").textContent = record.type_ja;
+    card.querySelector(".category").textContent = normalizeTypeJa(record);
 
     const releaseWrap = card.querySelector(".release-date-row");
     if (record.release_date && String(record.release_date).trim() !== "") {
@@ -182,11 +220,13 @@ function handleSearch() {
   const matches = state.records.filter((record) => {
     const loftMatches = (record.lofts || []).map(Number).includes(loft);
     const makerMatches = makerKey === "" || record.maker_key === makerKey;
-    const typeMatches = typeJa === "" || record.type_ja === typeJa;
+    const typeMatches = typeJa === "" || normalizeTypeJa(record) === typeJa;
     return loftMatches && makerMatches && typeMatches;
   });
 
   refs.guideMessage.hidden = true;
+
+  matches.sort((a, b) => parseReleaseDateValue(b.release_date) - parseReleaseDateValue(a.release_date));
 
   if (!matches.length) {
     showGuide(`ロフト角 ${formatLoft(loft)}° に一致するクラブは見つかりませんでした。`);
@@ -216,7 +256,7 @@ async function loadData() {
     state.loftOptions = [...new Set(state.records.flatMap((record) => (record.lofts || []).map(Number)).filter(Number.isFinite))].sort(
       (a, b) => a - b,
     );
-    state.typeLabels = [...new Set(state.records.map((record) => record.type_ja).filter(Boolean))].sort((a, b) =>
+    state.typeLabels = [...new Set(state.records.map((record) => normalizeTypeJa(record)).filter(Boolean))].sort((a, b) =>
       a.localeCompare(b, "ja"),
     );
 

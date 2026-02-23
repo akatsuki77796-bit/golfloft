@@ -3,6 +3,21 @@
   "maker_name_ja": "ピン",
   "models": [
     {
+      "model": "G30 ハイブリッド",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30
+      ],
+      "release_date": "2014-09",
+      "source_url": "https://clubping.jp/product/product2015_h.html",
+      "notes": "発売根拠 https://clubping.jp/news/2014/pingnews140905.pdf"
+    },
+    {
       "model": "G400 Hybrid",
       "type": "hybrid",
       "type_ja": "ユーティリティ",
@@ -75,7 +90,7 @@
       "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
     },
     {
-      "model": "G440 Hybrid",
+      "model": "G440 ハイブリッド",
       "type": "hybrid",
       "type_ja": "ユーティリティ",
       "lofts": [
@@ -90,7 +105,7 @@
       "source_url": "https://clubping.jp/product/product2025_g440_h.html"
     },
     {
-      "model": "G440 HL Hybrid",
+      "model": "G440 HL ハイブリッド",
       "type": "hybrid",
       "type_ja": "ユーティリティ",
       "lofts": [
@@ -109,7 +124,7 @@
     "maker_name_ja": "ピン",
     "type": "hybrid",
     "type_ja": "ユーティリティ",
-    "model": "G440 Hybrid",
+    "model": "G440 ハイブリッド",
     "lofts": [
       17,
       20,

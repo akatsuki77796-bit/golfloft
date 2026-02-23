@@ -16,6 +16,22 @@ function showError(message) {
   refs.errorMessage.textContent = message;
 }
 
+function normalizeTypeJa(record) {
+  if (record?.type_ja && String(record.type_ja).trim() !== "") {
+    return record.type_ja;
+  }
+
+  return record?.type === "hybrid" ? "ユーティリティ" : "";
+}
+
+function normalizeModelName(modelName) {
+  if (!modelName) {
+    return "";
+  }
+
+  return String(modelName).replace(/Hybrid/g, "ハイブリッド");
+}
+
 function renderModels(makerName, models) {
   refs.pageTitle.textContent = makerName;
   document.title = `${makerName} 登録クラブ一覧`;
@@ -26,8 +42,8 @@ function renderModels(makerName, models) {
 
   models.forEach((model) => {
     const card = refs.modelCardTemplate.content.firstElementChild.cloneNode(true);
-    card.querySelector(".model").textContent = model.model;
-    card.querySelector(".category").textContent = model.type_ja;
+    card.querySelector(".model").textContent = normalizeModelName(model.model);
+    card.querySelector(".category").textContent = normalizeTypeJa(model);
     card.querySelector(".lofts").textContent = (model.lofts || [])
       .map(Number)
       .filter(Number.isFinite)
