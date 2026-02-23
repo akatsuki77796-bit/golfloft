@@ -1,0 +1,22 @@
+{
+  "maker_key": "taylormade",
+  "maker_name_ja": "テーラーメイド",
+  "models": [
+    {
+      "model": "Qi10 Rescue",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [19, 22],
+      "release_date": "2024-02",
+      "source_url": ""
+    },
+    {
+      "model": "Qi10 Max Rescue",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [28],
+      "release_date": "2024-02",
+      "source_url": ""
+    }
+  ]
+}

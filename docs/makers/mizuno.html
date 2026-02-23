@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>メーカー別一覧</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-maker-key="mizuno">
+    <header class="site-header">
+      <h1 id="pageTitle">メーカー別一覧</h1>
+      <p id="pageLead" class="lead"></p>
+    </header>
+
+    <main class="container">
+      <p id="errorMessage" class="error" role="alert" hidden></p>
+      <p id="listCount" class="muted"></p>
+      <div id="modelList" class="club-grid" role="list"></div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="subtle-link" href="../list.html">メーカー一覧へ戻る</a>
+    </footer>
+
+    <template id="modelCardTemplate">
+      <article class="card" role="listitem">
+        <h2 class="model"></h2>
+        <p><strong>クラブ種別:</strong> <span class="category"></span></p>
+        <p class="release-date-row" hidden><strong>発売日:</strong> <span class="release-date"></span></p>
+        <p><strong>ロフト角一覧:</strong> <span class="lofts"></span></p>
+        <p><strong>公式/参照:</strong> <a class="inline-link source-link" href="#" target="_blank" rel="noopener noreferrer">参照ページ</a></p>
+      </article>
+    </template>
+
+    <script src="../maker.js" defer></script>
+  </body>
+</html>

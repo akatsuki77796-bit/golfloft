@@ -1,0 +1,82 @@
+const refs = {
+  pageTitle: document.getElementById("pageTitle"),
+  pageLead: document.getElementById("pageLead"),
+  listCount: document.getElementById("listCount"),
+  modelList: document.getElementById("modelList"),
+  errorMessage: document.getElementById("errorMessage"),
+  modelCardTemplate: document.getElementById("modelCardTemplate"),
+};
+
+function formatLoft(loft) {
+  return Number.isInteger(loft) ? String(loft) : String(loft);
+}
+
+function showError(message) {
+  refs.errorMessage.hidden = false;
+  refs.errorMessage.textContent = message;
+}
+
+function renderModels(makerName, models) {
+  refs.pageTitle.textContent = `${makerName} 登録モデル一覧`;
+  refs.pageLead.textContent = `${makerName}の登録済みモデルとロフト角一覧です。`;
+  refs.modelList.innerHTML = "";
+
+  const fragment = document.createDocumentFragment();
+
+  models.forEach((model) => {
+    const card = refs.modelCardTemplate.content.firstElementChild.cloneNode(true);
+    card.querySelector(".model").textContent = model.model;
+    card.querySelector(".category").textContent = model.type_ja;
+    card.querySelector(".lofts").textContent = (model.lofts || [])
+      .map(Number)
+      .filter(Number.isFinite)
+      .sort((a, b) => a - b)
+      .map((loft) => `${formatLoft(loft)}°`)
+      .join(" / ");
+
+    const releaseWrap = card.querySelector(".release-date-row");
+    if (model.release_date && String(model.release_date).trim() !== "") {
+      card.querySelector(".release-date").textContent = model.release_date;
+      releaseWrap.hidden = false;
+    }
+
+    const sourceLink = card.querySelector(".source-link");
+    sourceLink.href = model.source_url || "#";
+    if (!model.source_url) {
+      sourceLink.textContent = "参照元URL未登録";
+      sourceLink.removeAttribute("target");
+      sourceLink.removeAttribute("rel");
+    }
+
+    fragment.append(card);
+  });
+
+  refs.modelList.append(fragment);
+  refs.listCount.textContent = `${models.length}件の型番`;
+}
+
+async function loadMakerPage() {
+  const makerKey = document.body.dataset.makerKey;
+
+  try {
+    const [makersResponse, makerDataResponse] = await Promise.all([
+      fetch("../data/makers.json", { cache: "no-store" }),
+      fetch(`../data/makers/${makerKey}.json`, { cache: "no-store" }),
+    ]);
+
+    if (!makersResponse.ok || !makerDataResponse.ok) {
+      throw new Error(`HTTP ${makersResponse.status}/${makerDataResponse.status}`);
+    }
+
+    const makersData = await makersResponse.json();
+    const makerData = await makerDataResponse.json();
+    const makerInfo = (makersData.makers || []).find((maker) => maker.key === makerKey);
+    const makerName = makerInfo ? makerInfo.name_ja : makerData.maker_name_ja || makerKey;
+
+    renderModels(makerName, makerData.models || []);
+  } catch (error) {
+    showError(`メーカー別データの読み込みに失敗しました: ${error.message}`);
+  }
+}
+
+loadMakerPage();

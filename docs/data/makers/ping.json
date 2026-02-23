@@ -1,0 +1,22 @@
+{
+  "maker_key": "ping",
+  "maker_name_ja": "ピン",
+  "models": [
+    {
+      "model": "G430 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [19, 22, 26],
+      "release_date": "2022-11",
+      "source_url": ""
+    },
+    {
+      "model": "iCrossover",
+      "type": "iron",
+      "type_ja": "アイアン",
+      "lofts": [28],
+      "release_date": "",
+      "source_url": ""
+    }
+  ]
+}
