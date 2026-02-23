@@ -14,53 +14,6 @@
       "source_url": ""
     },
     {
-      "maker_key": "titleist",
-      "maker_name_ja": "タイトリスト",
-      "type_ja": "ユーティリティ",
-      "model": "GT2 Hybrid",
-      "lofts": [
-        18,
-        21,
-        24
-      ],
-      "release_date": "2024-08",
-      "source_url": ""
-    },
-    {
-      "maker_key": "titleist",
-      "maker_name_ja": "タイトリスト",
-      "type_ja": "アイアン",
-      "model": "T200 Utility Build",
-      "lofts": [
-        28
-      ],
-      "release_date": "2021/09",
-      "source_url": ""
-    },
-    {
-      "maker_key": "taylormade",
-      "maker_name_ja": "テーラーメイド",
-      "type_ja": "ユーティリティ",
-      "model": "Qi10 Rescue",
-      "lofts": [
-        19,
-        22
-      ],
-      "release_date": "2024-02",
-      "source_url": ""
-    },
-    {
-      "maker_key": "taylormade",
-      "maker_name_ja": "テーラーメイド",
-      "type_ja": "ユーティリティ",
-      "model": "Qi10 Max Rescue",
-      "lofts": [
-        28
-      ],
-      "release_date": "2024-02",
-      "source_url": ""
-    },
-    {
       "maker_key": "honma",
       "maker_name_ja": "本間ゴルフ",
       "type_ja": "ユーティリティ",
@@ -84,6 +37,161 @@
         25
       ],
       "release_date": "2024-03",
+      "source_url": ""
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G400 Hybrid",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30
+      ],
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G410 Hybrid",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30
+      ],
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G425 Hybrid",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G430 HL Hybrid",
+      "lofts": [
+        19,
+        22,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G430 Hybrid",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G440 HL Hybrid",
+      "lofts": [
+        20,
+        23,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "type_ja": "ユーティリティ",
+      "model": "G440 Hybrid",
+      "lofts": [
+        17,
+        20,
+        23,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "taylormade",
+      "maker_name_ja": "テーラーメイド",
+      "type_ja": "ユーティリティ",
+      "model": "Qi10 Max Rescue",
+      "lofts": [
+        28
+      ],
+      "release_date": "2024-02",
+      "source_url": ""
+    },
+    {
+      "maker_key": "taylormade",
+      "maker_name_ja": "テーラーメイド",
+      "type_ja": "ユーティリティ",
+      "model": "Qi10 Rescue",
+      "lofts": [
+        19,
+        22
+      ],
+      "release_date": "2024-02",
+      "source_url": ""
+    },
+    {
+      "maker_key": "titleist",
+      "maker_name_ja": "タイトリスト",
+      "type_ja": "ユーティリティ",
+      "model": "GT2 Hybrid",
+      "lofts": [
+        18,
+        21,
+        24
+      ],
+      "release_date": "2024-08",
+      "source_url": ""
+    },
+    {
+      "maker_key": "titleist",
+      "maker_name_ja": "タイトリスト",
+      "type_ja": "アイアン",
+      "model": "T200 Utility Build",
+      "lofts": [
+        28
+      ],
+      "release_date": "2021/09",
       "source_url": ""
     }
   ]

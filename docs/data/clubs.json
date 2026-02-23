@@ -1,128 +1,555 @@
 {
   "categories": [
-    "utility",
-    "hybrid",
-    "iron"
+    "hybrid"
   ],
   "makers": [
-    "Titleist",
-    "TaylorMade",
-    "Callaway",
-    "Mizuno",
-    "HONMA"
+    "キャロウェイ",
+    "本間ゴルフ",
+    "ミズノ",
+    "ピン",
+    "テーラーメイド",
+    "タイトリスト"
   ],
   "clubs": [
     {
-      "maker": "Titleist",
-      "model": "GT2 Hybrid",
+      "maker_key": "callaway",
+      "maker_name_ja": "キャロウェイ",
+      "model": "Paradym Ai Smoke Hybrid",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 18,
-      "release_date": "2024-08"
+      "release_date": "2024-01",
+      "source_url": ""
     },
     {
-      "maker": "Titleist",
-      "model": "GT2 Hybrid",
+      "maker_key": "callaway",
+      "maker_name_ja": "キャロウェイ",
+      "model": "Paradym Ai Smoke Hybrid",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 21,
-      "release_date": "2024-08"
+      "release_date": "2024-01",
+      "source_url": ""
     },
     {
-      "maker": "Titleist",
-      "model": "GT2 Hybrid",
+      "maker_key": "callaway",
+      "maker_name_ja": "キャロウェイ",
+      "model": "Paradym Ai Smoke Hybrid",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 24,
-      "release_date": "2024-08"
+      "release_date": "2024-01",
+      "source_url": ""
     },
     {
-      "maker": "TaylorMade",
-      "model": "Qi10 Rescue",
+      "maker_key": "honma",
+      "maker_name_ja": "本間ゴルフ",
+      "model": "TW757 Utility",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 21,
+      "release_date": "2022-01",
+      "source_url": ""
+    },
+    {
+      "maker_key": "honma",
+      "maker_name_ja": "本間ゴルフ",
+      "model": "TW757 Utility",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 24,
+      "release_date": "2022-01",
+      "source_url": ""
+    },
+    {
+      "maker_key": "honma",
+      "maker_name_ja": "本間ゴルフ",
+      "model": "TW757 Utility",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 28,
+      "release_date": "2022-01",
+      "source_url": ""
+    },
+    {
+      "maker_key": "mizuno",
+      "maker_name_ja": "ミズノ",
+      "model": "ST-MAX 230 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 19,
-      "release_date": "2024-02"
+      "release_date": "2024-03",
+      "source_url": ""
     },
     {
-      "maker": "TaylorMade",
-      "model": "Qi10 Rescue",
+      "maker_key": "mizuno",
+      "maker_name_ja": "ミズノ",
+      "model": "ST-MAX 230 Hybrid",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 22,
-      "release_date": "2024-02"
+      "release_date": "2024-03",
+      "source_url": ""
     },
     {
-      "maker": "TaylorMade",
+      "maker_key": "mizuno",
+      "maker_name_ja": "ミズノ",
+      "model": "ST-MAX 230 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 25,
+      "release_date": "2024-03",
+      "source_url": ""
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G400 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 17,
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G400 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 19,
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G400 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 22,
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G400 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G400 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G410 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 17,
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G410 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 19,
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G410 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 22,
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G410 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G410 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G425 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 17,
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G425 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 19,
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G425 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 22,
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G425 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G425 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G425 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 34,
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 19,
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 22,
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 34,
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 17,
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 19,
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 22,
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G430 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 34,
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 20,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 23,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 HL Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 34,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 17,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 20,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 23,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 26,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 30,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "ping",
+      "maker_name_ja": "ピン",
+      "model": "G440 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
+      "loft_deg": 34,
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "maker_key": "taylormade",
+      "maker_name_ja": "テーラーメイド",
       "model": "Qi10 Max Rescue",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 28,
-      "release_date": "2024-02"
+      "release_date": "2024-02",
+      "source_url": ""
     },
     {
-      "maker": "Callaway",
-      "model": "Paradym Ai Smoke Hybrid",
+      "maker_key": "taylormade",
+      "maker_name_ja": "テーラーメイド",
+      "model": "Qi10 Rescue",
       "category": "hybrid",
-      "loft_deg": 18,
-      "release_date": "2024-01"
-    },
-    {
-      "maker": "Callaway",
-      "model": "Paradym Ai Smoke Hybrid",
-      "category": "hybrid",
-      "loft_deg": 21,
-      "release_date": "2024-01"
-    },
-    {
-      "maker": "Callaway",
-      "model": "Paradym Ai Smoke Hybrid",
-      "category": "hybrid",
-      "loft_deg": 24,
-      "release_date": "2024-01"
-    },
-    {
-      "maker": "Mizuno",
-      "model": "ST-MAX 230 Hybrid",
-      "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 19,
-      "release_date": "2024-03"
+      "release_date": "2024-02",
+      "source_url": ""
     },
     {
-      "maker": "Mizuno",
-      "model": "ST-MAX 230 Hybrid",
+      "maker_key": "taylormade",
+      "maker_name_ja": "テーラーメイド",
+      "model": "Qi10 Rescue",
       "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 22,
-      "release_date": "2024-03"
+      "release_date": "2024-02",
+      "source_url": ""
     },
     {
-      "maker": "Mizuno",
-      "model": "ST-MAX 230 Hybrid",
+      "maker_key": "titleist",
+      "maker_name_ja": "タイトリスト",
+      "model": "GT2 Hybrid",
       "category": "hybrid",
-      "loft_deg": 25,
-      "release_date": "2024-03"
+      "type_ja": "ユーティリティ",
+      "loft_deg": 18,
+      "release_date": "2024-08",
+      "source_url": ""
     },
     {
-      "maker": "HONMA",
-      "model": "TW757 Utility",
-      "category": "utility",
+      "maker_key": "titleist",
+      "maker_name_ja": "タイトリスト",
+      "model": "GT2 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 21,
-      "release_date": "2022-01"
+      "release_date": "2024-08",
+      "source_url": ""
     },
     {
-      "maker": "HONMA",
-      "model": "TW757 Utility",
-      "category": "utility",
+      "maker_key": "titleist",
+      "maker_name_ja": "タイトリスト",
+      "model": "GT2 Hybrid",
+      "category": "hybrid",
+      "type_ja": "ユーティリティ",
       "loft_deg": 24,
-      "release_date": "2022-01"
+      "release_date": "2024-08",
+      "source_url": ""
     },
     {
-      "maker": "HONMA",
-      "model": "TW757 Utility",
-      "category": "utility",
-      "loft_deg": 28,
-      "release_date": "2022-01"
-    },
-    {
-      "maker": "Titleist",
+      "maker_key": "titleist",
+      "maker_name_ja": "タイトリスト",
       "model": "T200 Utility Build",
-      "category": "iron",
+      "category": "",
+      "type_ja": "アイアン",
       "loft_deg": 28,
-      "release_date": "2021/09"
+      "release_date": "2021/09",
+      "source_url": ""
     }
   ]
 }
