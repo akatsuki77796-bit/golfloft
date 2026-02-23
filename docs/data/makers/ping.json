@@ -1,13 +1,115 @@
 {
   "maker_key": "ping",
   "maker_name_ja": "ピン",
-  "models": [],
+  "models": [
+    {
+      "model": "G400 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30
+      ],
+      "release_date": "2017-09",
+      "source_url": "https://clubping.jp/product/product2017_g400_h.html"
+    },
+    {
+      "model": "G410 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30
+      ],
+      "release_date": "2019-03",
+      "source_url": "https://clubping.jp/product/product2019_g410_h.html"
+    },
+    {
+      "model": "G425 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2020-09",
+      "source_url": "https://clubping.jp/product/product2020_g425_h.html"
+    },
+    {
+      "model": "G430 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        17,
+        19,
+        22,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2022-11",
+      "source_url": "https://clubping.jp/product/product2022_g430_h.html"
+    },
+    {
+      "model": "G430 HL Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        19,
+        22,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2023-03",
+      "source_url": "https://clubping.jp/product/product2023_g430hl_h.html"
+    },
+    {
+      "model": "G440 Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        17,
+        20,
+        23,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440_h.html"
+    },
+    {
+      "model": "G440 HL Hybrid",
+      "type": "hybrid",
+      "type_ja": "ユーティリティ",
+      "lofts": [
+        20,
+        23,
+        26,
+        30,
+        34
+      ],
+      "release_date": "2025-02",
+      "source_url": "https://clubping.jp/product/product2025_g440hl_h.html"
+    }
+  ],
   "schema_example": {
     "maker_key": "ping",
     "maker_name_ja": "ピン",
     "type": "hybrid",
     "type_ja": "ユーティリティ",
-    "model": "G440 ハイブリッド",
+    "model": "G440 Hybrid",
     "lofts": [
       17,
       20,
@@ -17,7 +119,7 @@
       34
     ],
     "release_date": "2025-02",
-    "source_url": "https://clubping.jp/xxxxx",
+    "source_url": "https://clubping.jp/product/product2025_g440_h.html",
     "notes": "日本公式一次情報で発売日とロフト展開を確認できた場合のみ登録"
   }
 }
