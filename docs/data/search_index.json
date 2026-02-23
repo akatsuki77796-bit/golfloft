@@ -5,7 +5,11 @@
       "maker_name_ja": "キャロウェイ",
       "type_ja": "ユーティリティ",
       "model": "Paradym Ai Smoke Hybrid",
-      "lofts": [18, 21, 24],
+      "lofts": [
+        18,
+        21,
+        24
+      ],
       "release_date": "2024-01",
       "source_url": ""
     },
@@ -14,7 +18,11 @@
       "maker_name_ja": "タイトリスト",
       "type_ja": "ユーティリティ",
       "model": "GT2 Hybrid",
-      "lofts": [18, 21, 24],
+      "lofts": [
+        18,
+        21,
+        24
+      ],
       "release_date": "2024-08",
       "source_url": ""
     },
@@ -23,7 +31,9 @@
       "maker_name_ja": "タイトリスト",
       "type_ja": "アイアン",
       "model": "T200 Utility Build",
-      "lofts": [28],
+      "lofts": [
+        28
+      ],
       "release_date": "2021/09",
       "source_url": ""
     },
@@ -32,7 +42,10 @@
       "maker_name_ja": "テーラーメイド",
       "type_ja": "ユーティリティ",
       "model": "Qi10 Rescue",
-      "lofts": [19, 22],
+      "lofts": [
+        19,
+        22
+      ],
       "release_date": "2024-02",
       "source_url": ""
     },
@@ -41,26 +54,10 @@
       "maker_name_ja": "テーラーメイド",
       "type_ja": "ユーティリティ",
       "model": "Qi10 Max Rescue",
-      "lofts": [28],
+      "lofts": [
+        28
+      ],
       "release_date": "2024-02",
-      "source_url": ""
-    },
-    {
-      "maker_key": "ping",
-      "maker_name_ja": "ピン",
-      "type_ja": "ユーティリティ",
-      "model": "G430 Hybrid",
-      "lofts": [19, 22, 26],
-      "release_date": "2022-11",
-      "source_url": ""
-    },
-    {
-      "maker_key": "ping",
-      "maker_name_ja": "ピン",
-      "type_ja": "アイアン",
-      "model": "iCrossover",
-      "lofts": [28],
-      "release_date": "",
       "source_url": ""
     },
     {
@@ -68,7 +65,11 @@
       "maker_name_ja": "本間ゴルフ",
       "type_ja": "ユーティリティ",
       "model": "TW757 Utility",
-      "lofts": [21, 24, 28],
+      "lofts": [
+        21,
+        24,
+        28
+      ],
       "release_date": "2022-01",
       "source_url": ""
     },
@@ -77,7 +78,11 @@
       "maker_name_ja": "ミズノ",
       "type_ja": "ユーティリティ",
       "model": "ST-MAX 230 Hybrid",
-      "lofts": [19, 22, 25],
+      "lofts": [
+        19,
+        22,
+        25
+      ],
       "release_date": "2024-03",
       "source_url": ""
     }

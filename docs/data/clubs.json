@@ -6,7 +6,6 @@
   ],
   "makers": [
     "Titleist",
-    "PING",
     "TaylorMade",
     "Callaway",
     "Mizuno",
@@ -33,27 +32,6 @@
       "category": "hybrid",
       "loft_deg": 24,
       "release_date": "2024-08"
-    },
-    {
-      "maker": "PING",
-      "model": "G430 Hybrid",
-      "category": "hybrid",
-      "loft_deg": 19,
-      "release_date": "2022-11"
-    },
-    {
-      "maker": "PING",
-      "model": "G430 Hybrid",
-      "category": "hybrid",
-      "loft_deg": 22,
-      "release_date": "2022-11"
-    },
-    {
-      "maker": "PING",
-      "model": "G430 Hybrid",
-      "category": "hybrid",
-      "loft_deg": 26,
-      "release_date": "2022-11"
     },
     {
       "maker": "TaylorMade",
@@ -145,13 +123,6 @@
       "category": "iron",
       "loft_deg": 28,
       "release_date": "2021/09"
-    },
-    {
-      "maker": "PING",
-      "model": "iCrossover",
-      "category": "iron",
-      "loft_deg": 28,
-      "release_date": ""
     }
   ]
 }
