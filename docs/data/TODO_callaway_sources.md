@@ -3,6 +3,8 @@
 `docs/data/makers/callaway.json` は **source_url / release_date / lofts を日本公式一次情報で確認できたモデルのみ** 掲載する方針に統一しました。
 本ファイルは、一次情報URLが確定できず今回登録を見送ったモデルの管理リストです。
 
+> 2016-06〜2026の年別未確認リストは `docs/data/TODO_callaway_sources_2016_2026.md` を参照。
+
 ## 今回 callaway.json から除外したモデル（未確認）
 
 > いずれも以前は「参照元URL未登録」で混在していたため、verified-only方針に合わせて除外。
