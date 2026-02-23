@@ -43,7 +43,30 @@ function renderModels(makerName, models) {
 
   const fragment = document.createDocumentFragment();
 
-  models.forEach((model) => {
+  const sortedModels = [...models].sort((a, b) => {
+    const releaseA = String(a?.release_date || "").trim();
+    const releaseB = String(b?.release_date || "").trim();
+
+    if (!releaseA && !releaseB) {
+      return String(a?.model || "").localeCompare(String(b?.model || ""), "ja");
+    }
+
+    if (!releaseA) {
+      return 1;
+    }
+
+    if (!releaseB) {
+      return -1;
+    }
+
+    if (releaseA === releaseB) {
+      return String(a?.model || "").localeCompare(String(b?.model || ""), "ja");
+    }
+
+    return releaseB.localeCompare(releaseA);
+  });
+
+  sortedModels.forEach((model) => {
     const card = refs.modelCardTemplate.content.firstElementChild.cloneNode(true);
     card.querySelector(".model").textContent = normalizeModelName(model.model);
     card.querySelector(".category").textContent = normalizeTypeJa(model);
