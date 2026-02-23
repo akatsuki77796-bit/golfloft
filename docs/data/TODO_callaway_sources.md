@@ -1,64 +1,46 @@
-# TODO: キャロウェイ ユーティリティ（2015年以降・日本発売）一次情報ソース確認
+# TODO: キャロウェイ ユーティリティ（2015年以降・日本発売）一次情報の未確認モデル
 
-Codex実行環境から `https://www.callawaygolf.jp/` へのHTTPアクセスが 403 で遮断され、
-日本公式一次情報URL（`source_url`）を確認できませんでした。
-そのため `docs/data/makers/callaway.json` には推測データを登録していません。
+`docs/data/makers/callaway.json` は **source_url / release_date / lofts を日本公式一次情報で確認できたモデルのみ** 掲載する方針に統一しました。
+本ファイルは、一次情報URLが確定できず今回登録を見送ったモデルの管理リストです。
 
-## 確認コマンド（実行ログ）
-- `curl -I -L --max-time 20 https://www.callawaygolf.jp/` → `403 Forbidden`
+## 今回 callaway.json から除外したモデル（未確認）
 
-## 候補モデル（要公式確認）
-以下は**候補**です。登録前に必ず日本公式ページで「発売日」「ロフト展開」を確認し、
-各モデルごとに `source_url` を確定してください。
+> いずれも以前は「参照元URL未登録」で混在していたため、verified-only方針に合わせて除外。
 
-### 2024-
-- PARADYM Ai SMOKE
-- PARADYM Ai SMOKE HL
-- PARADYM Ai SMOKE MAX FAST
+- ROGUE STAR  
+  - 未確認理由: `source_url`（日本公式一次情報）未確定
+  - 探索先: `https://www.callawaygolf.jp/golf/clubs/hybrids`、`https://news.callawaygolf.jp/archive-clubs/`
+  - 検索キーワード例: `ROGUE STAR ユーティリティ site:news.callawaygolf.jp`
+- ROGUE STAR Women's  
+  - 未確認理由: `source_url`（日本公式一次情報）未確定
+  - 探索先: 同上
+  - 検索キーワード例: `ROGUE STAR Women's ユーティリティ site:news.callawaygolf.jp`
+- EPIC STAR  
+  - 未確認理由: `source_url`（日本公式一次情報）未確定
+  - 探索先: 同上
+  - 検索キーワード例: `EPIC STAR ユーティリティ site:news.callawaygolf.jp`
+- XR OS  
+  - 未確認理由: `source_url`（日本公式一次情報）未確定
+  - 探索先: 同上
+  - 検索キーワード例: `XR OS ユーティリティ site:news.callawaygolf.jp`
+- XR OS Women's  
+  - 未確認理由: `source_url`（日本公式一次情報）未確定
+  - 探索先: 同上
+  - 検索キーワード例: `XR OS Women's ユーティリティ site:news.callawaygolf.jp`
 
-### 2023
-- PARADYM
-- PARADYM X
-- PARADYM MAX FAST
+## 追加探索候補（2015年以降）
 
-### 2022
-- ROGUE ST MAX
-- ROGUE ST MAX OS
-- ROGUE ST MAX FAST
+以下は日本公式で存在可能性がある候補。`source_url` / `release_date` / `lofts` が一次情報で確認できた場合のみ登録する。
 
-### 2021
-- APEX UW（ユーティリティ枠扱いか要確認）
-
-### 2020
-- MAVRIK
-- MAVRIK MAX
-
-### 2019
-- EPIC FLASH
-- EPIC FLASH STAR
-
-### 2018
-- ROGUE STAR
-
-### 2017
-- GBB EPIC STAR
-
-### 2016
+- PARADYM Ai SMOKE / PARADYM Ai SMOKE HL / PARADYM Ai SMOKE MAX FAST
+- PARADYM / PARADYM X / PARADYM MAX FAST
+- ROGUE ST MAX / ROGUE ST MAX OS / ROGUE ST MAX FAST
+- MAVRIK / MAVRIK MAX
+- EPIC FLASH / EPIC FLASH STAR
 - BIG BERTHA OS
 
-### 2015
-- XR
-- XR PRO
+## 一次情報の採用ルール（再掲）
 
-## 日本公式でのURL探索手順
-1. キャロウェイ日本公式の製品一覧で「ユーティリティ / ハイブリッド」カテゴリを選択。
-2. 各モデルの製品ページで発売日（ニュースリリース含む）を確認。
-3. 同一型番のロフト違いは1レコードに統合し、`lofts` を数値昇順で記録。
-4. 派生（MAX / HL / X / FAST など）は別型番として別レコード登録。
-5. `source_url` は必ず日本公式一次情報（製品ページ・公式ニュース）を設定。
-
-## 手掛かりURL（要ログイン/アクセス許可環境で再確認）
-- https://www.callawaygolf.jp/
-- https://www.callawaygolf.jp/jp/%E3%82%AF%E3%83%A9%E3%83%96/
-- https://www.callawaygolf.jp/jp/%E3%82%AF%E3%83%A9%E3%83%96/%E3%83%A6%E3%83%BC%E3%83%86%E3%82%A3%E3%83%AA%E3%83%86%E3%82%A3/
-- https://www.callawaygolf.jp/jp/news/
+- `source_url` は `callawaygolf.jp` または `news.callawaygolf.jp` の公式ページのみ
+- `release_date` と `lofts` は同一公式ページ内で確認できる場合のみ登録
+- 確認できないモデルは callaway.json へ入れない
