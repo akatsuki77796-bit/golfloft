@@ -6,15 +6,16 @@ const state = {
 };
 
 const refs = {
-  loftSelect: document.getElementById("loftSelect"),
-  makerFilter: document.getElementById("makerFilter"),
-  categoryFilter: document.getElementById("categoryFilter"),
-  searchBtn: document.getElementById("searchBtn"),
-  clubList: document.getElementById("clubList"),
-  guideMessage: document.getElementById("guideMessage"),
-  listCount: document.getElementById("listCount"),
-  errorMessage: document.getElementById("errorMessage"),
-  clubCardTemplate: document.getElementById("clubCardTemplate"),
+  loftSelect: null,
+  makerFilter: null,
+  categoryFilter: null,
+  searchBtn: null,
+  clubList: null,
+  guideMessage: null,
+  listCount: null,
+  errorMessage: null,
+  clubCardTemplate: null,
+  makerLinks: null,
 };
 
 function formatLoft(loft) {
@@ -27,22 +28,36 @@ function parseLoftInput(rawValue) {
 }
 
 function showError(message) {
-  refs.errorMessage.hidden = false;
-  refs.errorMessage.textContent = message;
+  if (refs.errorMessage) {
+    refs.errorMessage.hidden = false;
+    refs.errorMessage.textContent = message;
+    return;
+  }
+
+  console.error(message);
 }
 
 function clearError() {
+  if (!refs.errorMessage) {
+    return;
+  }
+
   refs.errorMessage.hidden = true;
   refs.errorMessage.textContent = "";
 }
 
-function initSelect(selectEl, options, allLabel, valueResolver = (option) => option, labelResolver = (option) => option) {
+function initSelect(selectEl, options, placeholderLabel, valueResolver = (option) => option, labelResolver = (option) => option) {
+  if (!selectEl) {
+    console.error(`セレクト要素が見つからないため初期化できません: ${placeholderLabel}`);
+    return;
+  }
+
   selectEl.innerHTML = "";
 
-  const allOption = document.createElement("option");
-  allOption.value = "all";
-  allOption.textContent = allLabel;
-  selectEl.append(allOption);
+  const placeholderOption = document.createElement("option");
+  placeholderOption.value = "";
+  placeholderOption.textContent = placeholderLabel;
+  selectEl.append(placeholderOption);
 
   options.forEach((option) => {
     const opt = document.createElement("option");
@@ -53,6 +68,11 @@ function initSelect(selectEl, options, allLabel, valueResolver = (option) => opt
 }
 
 function initLoftSelect(lofts) {
+  if (!refs.loftSelect) {
+    console.error("ロフト角セレクト要素が見つからないため初期化できません。");
+    return;
+  }
+
   refs.loftSelect.innerHTML = "";
 
   const placeholderOption = document.createElement("option");
@@ -69,6 +89,11 @@ function initLoftSelect(lofts) {
 }
 
 function showGuide(text) {
+  if (!refs.guideMessage || !refs.clubList || !refs.listCount) {
+    console.error("ガイド表示先要素が見つからないためガイドメッセージを更新できません。");
+    return;
+  }
+
   refs.guideMessage.hidden = false;
   refs.guideMessage.textContent = text;
   refs.clubList.hidden = true;
@@ -77,6 +102,11 @@ function showGuide(text) {
 }
 
 function renderResults(matches, searchedLoft) {
+  if (!refs.clubList || !refs.clubCardTemplate) {
+    console.error("検索結果表示先要素が見つからないため結果を描画できません。");
+    return;
+  }
+
   refs.clubList.innerHTML = "";
   const fragment = document.createDocumentFragment();
 
@@ -111,8 +141,34 @@ function renderResults(matches, searchedLoft) {
   refs.clubList.hidden = false;
 }
 
+function renderMakerLinks(makers) {
+  if (!refs.makerLinks) {
+    console.error("メーカーリンク表示先要素が見つからないためリンクを描画できません。");
+    return;
+  }
+
+  refs.makerLinks.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+
+  makers.forEach((maker) => {
+    const link = document.createElement("a");
+    link.className = "subtle-link maker-inline-link";
+    link.href = maker.page_url;
+    link.textContent = maker.name_ja;
+    fragment.append(link);
+  });
+
+  refs.makerLinks.append(fragment);
+}
+
 function handleSearch() {
   clearError();
+
+  if (!refs.loftSelect || !refs.makerFilter || !refs.categoryFilter || !refs.guideMessage || !refs.listCount) {
+    showError("検索に必要な画面要素が見つからないため処理を実行できません。");
+    return;
+  }
+
   const loft = parseLoftInput(refs.loftSelect.value);
 
   if (loft === null) {
@@ -125,8 +181,8 @@ function handleSearch() {
 
   const matches = state.records.filter((record) => {
     const loftMatches = (record.lofts || []).map(Number).includes(loft);
-    const makerMatches = makerKey === "all" || record.maker_key === makerKey;
-    const typeMatches = typeJa === "all" || record.type_ja === typeJa;
+    const makerMatches = makerKey === "" || record.maker_key === makerKey;
+    const typeMatches = typeJa === "" || record.type_ja === typeJa;
     return loftMatches && makerMatches && typeMatches;
   });
 
@@ -165,14 +221,64 @@ async function loadData() {
     );
 
     initLoftSelect(state.loftOptions);
-    initSelect(state.makerFilter, state.makers, "すべてのメーカー", (maker) => maker.key, (maker) => maker.name_ja);
-    initSelect(state.categoryFilter, state.typeLabels, "すべてのクラブ種別");
+    initSelect(refs.makerFilter, state.makers, "選択してください", (maker) => maker.key, (maker) => maker.name_ja);
+    initSelect(refs.categoryFilter, state.typeLabels, "選択してください");
+    renderMakerLinks(state.makers);
     showGuide("ロフト角を選択して検索してください。");
   } catch (error) {
-    showError(`クラブデータの読み込みに失敗しました: ${error.message}`);
+    const message = `クラブデータの読み込みに失敗しました: ${error.message}`;
+    if (refs.errorMessage) {
+      showError(message);
+    } else {
+      console.error(message);
+    }
     showGuide("データを読み込めなかったため検索できません。");
   }
 }
 
-refs.searchBtn.addEventListener("click", handleSearch);
-loadData();
+function collectRefs() {
+  refs.loftSelect = document.getElementById("loftSelect");
+  refs.makerFilter = document.getElementById("makerFilter");
+  refs.categoryFilter = document.getElementById("categoryFilter");
+  refs.searchBtn = document.getElementById("searchBtn");
+  refs.clubList = document.getElementById("clubList");
+  refs.guideMessage = document.getElementById("guideMessage");
+  refs.listCount = document.getElementById("listCount");
+  refs.errorMessage = document.getElementById("errorMessage");
+  refs.clubCardTemplate = document.getElementById("clubCardTemplate");
+  refs.makerLinks = document.getElementById("makerLinks");
+}
+
+function validateRefs() {
+  const required = [
+    ["loftSelect", refs.loftSelect],
+    ["makerFilter", refs.makerFilter],
+    ["categoryFilter", refs.categoryFilter],
+    ["searchBtn", refs.searchBtn],
+    ["clubList", refs.clubList],
+    ["guideMessage", refs.guideMessage],
+    ["listCount", refs.listCount],
+    ["clubCardTemplate", refs.clubCardTemplate],
+  ];
+
+  const missingIds = required.filter(([, value]) => !value).map(([id]) => id);
+  if (missingIds.length === 0) {
+    return true;
+  }
+
+  showError(`初期化に失敗しました。必要なDOM要素が見つかりません: ${missingIds.join(", ")}`);
+  console.error("初期化に失敗しました。必要なDOM要素が見つかりません。", missingIds);
+  return false;
+}
+
+function bootstrap() {
+  collectRefs();
+  if (!validateRefs()) {
+    return;
+  }
+
+  refs.searchBtn.addEventListener("click", handleSearch);
+  loadData();
+}
+
+document.addEventListener("DOMContentLoaded", bootstrap);

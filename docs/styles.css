@@ -223,3 +223,21 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
+
+.footer-links-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+}
+
+.maker-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.6rem;
+}
+
+.maker-inline-link {
+  font-size: 0.82rem;
+}
