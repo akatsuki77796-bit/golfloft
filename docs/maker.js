@@ -17,7 +17,8 @@ function showError(message) {
 }
 
 function renderModels(makerName, models) {
-  refs.pageTitle.textContent = `${makerName} 登録モデル一覧`;
+  refs.pageTitle.textContent = makerName;
+  document.title = `${makerName} 登録クラブ一覧`;
   refs.pageLead.textContent = `${makerName}の登録済みモデルとロフト角一覧です。`;
   refs.modelList.innerHTML = "";
 
@@ -60,8 +61,11 @@ function renderModels(makerName, models) {
 
 async function loadMakerPage() {
   const makerKey = document.body.dataset.makerKey;
+  const initialMakerName = document.body.dataset.makerNameJa || makerKey;
 
-  refs.pageLead.textContent = "データを読み込み中です...";
+  refs.pageTitle.textContent = initialMakerName;
+  document.title = `${initialMakerName} 登録クラブ一覧`;
+  refs.pageLead.textContent = `${initialMakerName}のデータを読み込み中です...`;
   refs.listCount.textContent = "読み込み中...";
 
   try {
